@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args){
     System.out.println("hello word");
@@ -49,7 +51,36 @@ public class Main {
         var iNcreasePerYear = kris/100 * 12;
         System .out .println("Kris now gets" + iNcreAse + " increase per year" + iNcreasePerYear);
 
+       // LESSON 5
 
+        //exepcise 1
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastHame = "Ivanov";
+        String fillName1 = String.join(" ", lastHame, firstName, middleName);
+
+
+
+        //exepcise 2
+        String fullHame = "Ivanov Ivan Ivanovich";
+        String fullHame2 = fullHame.toUpperCase(Locale.ROOT);
+
+
+
+        //exepcise 3
+        String fillNam = "Иванов Семён Семёнович";
+        String replfillNam3 = fillNam.replaceAll("ё", "e") ;
+
+
+        System.out.println(replfillNam3);
+        System.out.println(fillName1 );
+        System.out.println(fullHame2);
     }
-
 }
+
+
+
+
+
+
+
